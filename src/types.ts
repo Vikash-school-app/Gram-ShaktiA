@@ -30,14 +30,14 @@ export interface PendingAd {
   id?: string;
   uid: string;
   text: string;
-  image: string; // base64 string
+  image: string; // base64
   adType: AdType;
   websiteUrl?: string;
   targetLevel: TargetLevel;
-  targetValue: string; // e.g., "Rajasthan" or "Jaipur"
+  targetValue: string; // e.g., "Rajasthan" or "Global"
   plan: AdPlan;
   price: number;
-  paymentScreenshot: string; // base64 string
+  paymentScreenshot: string; // base64
   status: 'pending' | 'active' | 'expired';
   createdAt: string;
 }
